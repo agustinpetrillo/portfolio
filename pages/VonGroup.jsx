@@ -36,7 +36,7 @@ const VonGroup = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/fireclint/property-finder"
+              href="https://gitlab.com/agustinpetrillo1/focus-von-group"
               target="_blank"
               rel="noreferrer"
             >

@@ -36,7 +36,7 @@ const Portfolio = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/fireclint/property-finder"
+              href="https://github.com/agustinpetrillo/portfolio"
               target="_blank"
               rel="noreferrer"
             >
@@ -45,7 +45,7 @@ const Portfolio = () => {
               </button>
             </a>
             <a
-              href="https://property-finder-development.web.app/"
+              href="https://portfolio-cyan-one-43.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >

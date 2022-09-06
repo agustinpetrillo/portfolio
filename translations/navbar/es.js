@@ -1,0 +1,10 @@
+export default {
+    "first": 'Inicio',
+    "second": 'Acerca de mi',
+    "third": 'Habilidades',
+    "fourth": 'Proyectos',
+    "fifth": 'Contacto',
+    "portfolio": 'Bienvenido a mi portafolio!',
+    "lenguage": "es",
+    "connect": 'Contactame',
+}

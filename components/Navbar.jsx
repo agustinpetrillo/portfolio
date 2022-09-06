@@ -140,7 +140,7 @@ const Navbar = () => {
                 >
                   <option
                     value="en"
-                    className="ml-10 text-sm font-bold uppercase "
+                    className="ml-10 text-sm font-bold uppercase"
                   >
                     EN
                   </option>

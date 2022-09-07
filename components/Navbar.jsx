@@ -48,6 +48,14 @@ const Navbar = () => {
     router.push("/", "/", { locale });
   };
 
+  const [rotate, setRotate] = useState(false);
+  const handleScrollY = () => {
+    !rotate
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+    setRotate(!rotate);
+  };
+
   return (
     <>
       <div
@@ -112,7 +120,7 @@ const Navbar = () => {
               </select>
             </ul>
             <div onClick={handleNav} className="md:hidden">
-              <AiOutlineMenu size={20} />
+              <AiOutlineMenu size={20} onClick={handleScrollY} />
             </div>
           </div>
         </div>
@@ -125,6 +133,7 @@ const Navbar = () => {
           }
         >
           <div
+            onClick={handleScrollY}
             className={
               nav
                 ? "fixed left-0 top-0 w-3/4 sm:w-3/5 md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 flex flex-col justify-center"
@@ -155,7 +164,7 @@ const Navbar = () => {
                   onClick={handleNav}
                   className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200"
                 >
-                  <AiOutlineClose />
+                  <AiOutlineClose size={15} />
                 </div>
               </div>
               <div className="border-b border-b-gray-300 my-4">

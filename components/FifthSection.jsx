@@ -165,7 +165,7 @@ const FifthSection = () => {
           </div>
         </Container>
       </Background>
-      <style>{`
+      <style jsx>{`
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
           -webkit-appearance: none;

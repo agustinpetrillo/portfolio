@@ -19,21 +19,17 @@ const Navbar = () => {
 
   const controlNavbar = () => {
     if (window.scrollY < lastScrollY) {
-      // if scroll down hide the navbar
       setShow(false);
     } else {
-      // if scroll up show the navbar
       setShow(true);
     }
 
-    // remember current page location to use in the next move
     setLastScrollY(window.scrollY);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
 
-    // cleanup function
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
@@ -133,7 +129,6 @@ const Navbar = () => {
           }
         >
           <div
-            onClick={handleScrollY}
             className={
               nav
                 ? "fixed left-0 top-0 w-3/4 sm:w-3/5 md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 flex flex-col justify-center"
@@ -164,7 +159,7 @@ const Navbar = () => {
                   onClick={handleNav}
                   className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200"
                 >
-                  <AiOutlineClose size={15} />
+                  <AiOutlineClose size={15} onClick={handleScrollY} />
                 </div>
               </div>
               <div className="border-b border-b-gray-300 my-4">
@@ -173,31 +168,41 @@ const Navbar = () => {
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
-                <Link href="/#home">
-                  <li className="py-4 text-sm" onClick={handleNav}>
-                    {translate.first}
-                  </li>
-                </Link>
-                <Link href="/#about">
-                  <li className="py-4 text-sm" onClick={handleNav}>
-                    {translate.second}
-                  </li>
-                </Link>
-                <Link href="/#skills">
-                  <li className="py-4 text-sm" onClick={handleNav}>
-                    {translate.third}
-                  </li>
-                </Link>
-                <Link href="/#projects">
-                  <li className="py-4 text-sm" onClick={handleNav}>
-                    {translate.fourth}
-                  </li>
-                </Link>
-                <Link href="/#contact">
-                  <li className="py-4 text-sm" onClick={handleNav}>
-                    {translate.fifth}
-                  </li>
-                </Link>
+                <div onClick={handleScrollY}>
+                  <Link href="/#home">
+                    <li className="py-4 text-sm" onClick={handleNav}>
+                      {translate.first}
+                    </li>
+                  </Link>
+                </div>
+                <div onClick={handleScrollY}>
+                  <Link href="/#about">
+                    <li className="py-4 text-sm" onClick={handleNav}>
+                      {translate.second}
+                    </li>
+                  </Link>
+                </div>
+                <div onClick={handleScrollY}>
+                  <Link href="/#skills">
+                    <li className="py-4 text-sm" onClick={handleNav}>
+                      {translate.third}
+                    </li>
+                  </Link>
+                </div>
+                <div onClick={handleScrollY}>
+                  <Link href="/#projects">
+                    <li className="py-4 text-sm" onClick={handleNav}>
+                      {translate.fourth}
+                    </li>
+                  </Link>
+                </div>
+                <div onClick={handleScrollY}>
+                  <Link href="/#contact">
+                    <li className="py-4 text-sm" onClick={handleNav}>
+                      {translate.fifth}
+                    </li>
+                  </Link>
+                </div>
               </ul>
               <div className="pt-10 uppercase">
                 <p className="tracking-widest text-[#5651e5]">

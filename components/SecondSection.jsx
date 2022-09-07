@@ -9,22 +9,24 @@ const SecondSection = () => {
   const { locale } = router;
   const translate = locale === "en" ? en : es;
   return (
-    <Background id="about" className="min-h-0">
-      <Container className="min-h-0 pb-20 md:pb-32">
-        <div className="col-span-2 flex flex-col lg:items-start items-center text-center md:text-start justify-center">
-          <p className="uppercase tracking-widest text-[#5651e5]">
-            {translate.first}
-          </p>
-          <h2 className="py-4">{translate.second}</h2>
-          <p className="py-2 text-gray-600 max-w-[80%] md:max-w-full">
-            {translate.third}
-          </p>
-          <p className="underline py-2 cursor-pointer text-gray-600">
-            {translate.fourth}
-          </p>
-        </div>
-      </Container>
-    </Background>
+    <>
+      <Background id="about" className="min-h-0">
+        <Container className="min-h-0 pb-20 md:pb-32">
+          <div className="col-span-2 flex flex-col lg:items-start items-center text-center md:text-start justify-center">
+            <p className="uppercase tracking-widest text-[#5651e5]">
+              {translate.first}
+            </p>
+            <h2 className="py-4">{translate.second}</h2>
+            <p className="py-2 text-gray-600 max-w-[80%] md:max-w-full">
+              {translate.third}
+            </p>
+            <p className="underline py-2 cursor-pointer text-gray-600">
+              {translate.fourth}
+            </p>
+          </div>
+        </Container>
+      </Background>
+    </>
   );
 };
 export default SecondSection;

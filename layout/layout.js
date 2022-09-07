@@ -10,7 +10,7 @@ const layout = ({ children }) => {
         <>
             {noNav.includes(asPath) ? null : <Navbar />}
             {children}
-            {noNav.includes(asPath) ? null : <Navbar />}
+            {/* {noNav.includes(asPath) ? null : <Footer />} */}
         </>
     );
 }

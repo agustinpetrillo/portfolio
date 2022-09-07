@@ -165,13 +165,12 @@ const FifthSection = () => {
           </div>
         </Container>
       </Background>
-      <style jsx global>{`
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-        }
-      `}</style>
+      <style>{`
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+        `}</style>
     </>
   );
 };

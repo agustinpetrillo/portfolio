@@ -51,8 +51,8 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed w-full min-h-0 py-3 shadow-xl z-50 bg-[#ecf0f3] duration-300 ease-in-out ${
-          show && "-translate-y-16 duration-300 ease-in-out"
+        className={`fixed w-full min-h-0 md:py-3 py-2 shadow-xl z-50 bg-[#ecf0f3] duration-300 ease-in-out ${
+          show && "md:-translate-y-16 duration-300 ease-in-out"
         } `}
       >
         <div className="flex justify-between items-center px-8 2xl:px-16">

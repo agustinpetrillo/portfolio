@@ -22,10 +22,10 @@ export default function Home() {
       </Head>
 
       <div>
-        {/* <FirstSection />
+        <FirstSection />
         <SecondSection />
         <ThirdSection />
-        <FourthSection /> */}
+        <FourthSection />
         <FifthSection />
       </div>
     </div>

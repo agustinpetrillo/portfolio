@@ -127,8 +127,8 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "fixed left-0 top-0 w-3/4 sm:w-3/5 md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 min-h-screen flex flex-col justify-center"
-                : "fixed -left-full top-0 w-3/4 sm:w-3/5 md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 min-h-screen flex flex-col justify-center"
+                ? "fixed left-0 top-0 w-3/4 sm:w-3/5 md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 flex flex-col justify-center"
+                : "fixed -left-full top-0 w-3/4 sm:w-3/5 md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 flex flex-col justify-center"
             }
           >
             <div className="pt-5">

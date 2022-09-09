@@ -14,7 +14,7 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const [show, setShow] = useState(null);
+  const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {

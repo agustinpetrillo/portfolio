@@ -3,6 +3,7 @@ import Container from "./Container";
 import es from "../translations/second-section/es";
 import en from "../translations/second-section/en";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const SecondSection = () => {
   const router = useRouter();
@@ -20,9 +21,11 @@ const SecondSection = () => {
             <p className="py-2 text-gray-600 max-w-[80%] md:max-w-full">
               {translate.third}
             </p>
-            <p className="underline py-2 cursor-pointer text-gray-600">
-              {translate.fourth}
-            </p>
+            <Link href="/#projects">
+              <p className="underline py-2 cursor-pointer text-gray-600">
+                {translate.fourth}
+              </p>
+            </Link>
           </div>
         </Container>
       </Background>

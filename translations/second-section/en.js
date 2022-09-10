@@ -1,6 +1,6 @@
 export default {
     "first": 'About',
     "second": 'Who I Am',
-    "third": 'english dog',
+    "third": 'Hello! Thank you for checking out my portfolio. I am Agustin Petrillo, a Front-End Developer. I started programming in Java back in 2021 and since then I have been specializing in the area of web development. At this time, my main goal is to continue studying and expanding my knowledge, as well as to obtain new job experiences that allow me to apply my skills in the most efficient manner possible, always putting the experience of the user first. Lately, I have been learning about NextJS framework and the TailwindCSS library in order to develop complex projects more quickly and effectively. I carry out my tasks responsibly and proactively. I am able to easily adapt to different working environments, achieving my daily goals by means of my perseverance, building relationships based on respect and teamwork. Feel free to contact me through my social networks, if interested.',
     "fourth": 'Check out my other projects',
 }

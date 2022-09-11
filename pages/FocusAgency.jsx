@@ -36,7 +36,7 @@ const FocusAgency = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/fireclint/property-finder"
+              href="https://gitlab.com/agustinpetrillo1/focus-agency-nextjs"
               target="_blank"
               rel="noreferrer"
             >
@@ -45,7 +45,7 @@ const FocusAgency = () => {
               </button>
             </a>
             <a
-              href="https://property-finder-development.web.app/"
+              href="https://focus-agency-nextjs.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,0 +1,8 @@
+export default {
+    "first": 'Project',
+    "second": "Overview",
+    "description": "This website was developed with Next, the framework with which I currently work. The purpose of this web was to learn how to use an API, bring them to the project and use this information as request-response.",
+    "back": 'Back',
+    "code": 'Code',
+    "tecnologies": 'Technologies',
+}

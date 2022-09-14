@@ -46,7 +46,7 @@ const FirstSection = () => {
                 </div>
               </a>
               <a
-                href="https://github.com/agustinpetrillo"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=agustinpetrillo1@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >

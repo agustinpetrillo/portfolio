@@ -21,7 +21,7 @@ const FourthSection = () => {
     AOS.init({
       duration: 100,
       easing: "ease-in",
-      disable: ["phone", "mobile"],
+      disable: window.innerWidth < 768,
       mirror: false,
       anchorPlacement: "top-bottom",
     });

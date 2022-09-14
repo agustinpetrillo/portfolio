@@ -8,20 +8,41 @@ import ProjectsBuilt from "./ProjectsBuilt";
 import en from "../translations/fourth-section/en";
 import es from "../translations/fourth-section/es";
 import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const FourthSection = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 100,
+      easing: "ease-in",
+      disable: ["phone", "mobile"],
+      mirror: false,
+      anchorPlacement: "top-bottom",
+    });
+  });
   return (
     <>
       <Background id="projects" className="min-h-0">
         <Container className="text-center lg:text-start min-h-0 pb-20 md:pb-32">
-          <p className="uppercase tracking-widest text-[#5651e5]">
+          <p
+            className="uppercase tracking-widest text-[#5651e5]"
+            data-aos="fade"
+          >
             {translate.first}
           </p>
-          <h2 className="py-4">{translate.second}</h2>
-          <div className="grid md:grid-cols-2 gap-8 px-4 lg:px-0">
+          <h2 className="py-4" data-aos="fade">
+            {translate.second}
+          </h2>
+          <div
+            className="grid md:grid-cols-2 gap-8 px-4 lg:px-0"
+            data-aos="fade"
+          >
             <ProjectsBuilt
               title="Focus Agency"
               backgroundImage={focusAgency}

@@ -10,20 +10,41 @@ import Link from "next/link";
 import en from "../translations/fifth-section/en";
 import es from "../translations/fifth-section/es";
 import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const FifthSection = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 100,
+      easing: "ease-in",
+      disable: ["phone", "mobile"],
+      mirror: false,
+      anchorPlacement: "top-bottom",
+    });
+  });
   return (
     <>
       <Background id="contact" className="min-h-0">
         <Container className="min-h-0 text-center lg:text-start pb-2">
-          <p className="uppercase tracking-widest text-[#5651e5]">
+          <p
+            className="uppercase tracking-widest text-[#5651e5]"
+            data-aos="fade"
+          >
             {translate.first}
           </p>
-          <h2 className="py-4">{translate.second}</h2>
-          <div className="grid lg:grid-cols-5 gap-8 lg:px-0 justify-center">
+          <h2 className="py-4" data-aos="fade">
+            {translate.second}
+          </h2>
+          <div
+            className="grid lg:grid-cols-5 gap-8 lg:px-0 justify-center"
+            data-aos="fade"
+          >
             {/* left */}
             <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
               <div className="lg:p-4 h-full">

@@ -4,16 +4,32 @@ import es from "../translations/second-section/es";
 import en from "../translations/second-section/en";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const SecondSection = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 100,
+      easing: "ease-in",
+      disable: ["phone", "mobile"],
+      mirror: false,
+      anchorPlacement: "top-bottom",
+    });
+  });
   return (
     <>
       <Background id="about" className="min-h-0">
         <Container className="min-h-0 pb-20 md:pb-32">
-          <div className="col-span-2 flex flex-col lg:items-start items-center text-center md:text-start justify-center">
+          <div
+            className="col-span-2 flex flex-col lg:items-start items-center text-center md:text-start justify-center"
+            data-aos="fade"
+          >
             <p className="uppercase tracking-widest text-[#5651e5]">
               {translate.first}
             </p>

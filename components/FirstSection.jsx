@@ -6,16 +6,29 @@ import { RiGitlabFill } from "react-icons/ri";
 import { useRouter } from "next/router";
 import es from "../translations/first-section/es";
 import en from "../translations/first-section/en";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FirstSection = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
+
+  useEffect(() => {
+    AOS.init({
+      duration: 100,
+      easing: "ease-in",
+      disable: ["phone", "mobile"],
+      mirror: false,
+      anchorPlacement: "top-bottom",
+    });
+  });
   return (
     <>
       <Background id="home" className="min-h-screen">
         <Container className="flex items-center justify-center text-center min-h-screen">
-          <div className="pt-24 pb-20 md:py-0">
+          <div className="pt-24 pb-20 md:py-0" data-aos="fade">
             <p className="uppercase text-sm tracking-widest text-gray-600">
               {translate.first}
             </p>

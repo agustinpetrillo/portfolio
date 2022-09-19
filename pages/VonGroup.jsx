@@ -35,7 +35,7 @@ const VonGroup = () => {
           <h2 className="pb-4">{translate.second}</h2>
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
-            <a
+            {/* <a
               href="https://gitlab.com/agustinpetrillo1/focus-von-group"
               target="_blank"
               rel="noreferrer"
@@ -43,7 +43,7 @@ const VonGroup = () => {
               <button className="px-7 py-2 mt-4 mr-8 hover:scale-110 ease-in-out duration-300">
                 {translate.code}
               </button>
-            </a>
+            </a> */}
             <a
               href="https://von-group.vercel.app/"
               target="_blank"

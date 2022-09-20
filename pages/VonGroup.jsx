@@ -14,7 +14,7 @@ const VonGroup = () => {
   const { locale } = router;
   const translate = locale === "en" ? en : es;
   useEffect(() => {
-    document.title = "Portfolio A.P Projects";
+    document.title = translate.title;
   });
   return (
     <Background className="min-h-0">

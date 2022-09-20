@@ -6,4 +6,5 @@ export default {
     "back": 'Atras',
     "code": 'Codigo',
     "tecnologies": 'Tecnologías',
+    "title": "Portafolio A.P - Proyectos"
 }

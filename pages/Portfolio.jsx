@@ -15,7 +15,7 @@ const Portfolio = () => {
   const translate = locale === "en" ? en : es;
   useEffect(() => {
     document.title = translate.title;
-  });
+  }, []);
   return (
     <Background className="min-h-0">
       <div className="w-full h-[50vh] relative">

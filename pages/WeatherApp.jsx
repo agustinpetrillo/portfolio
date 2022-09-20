@@ -7,11 +7,15 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import es from "../translations/weather-app/es";
 import en from "../translations/weather-app/en";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const WeatherApp = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
+  useEffect(() => {
+    document.title = "Portfolio A.P Projects";
+  });
   return (
     <Background className="min-h-0">
       <div className="w-full h-[50vh] relative">

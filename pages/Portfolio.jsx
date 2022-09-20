@@ -7,11 +7,15 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import es from "../translations/portfolio/es";
 import en from "../translations/portfolio/en";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Portfolio = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
+  useEffect(() => {
+    document.title = "Portfolio A.P Projects";
+  });
   return (
     <Background className="min-h-0">
       <div className="w-full h-[50vh] relative">

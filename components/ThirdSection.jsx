@@ -68,7 +68,7 @@ const ThirdSection = () => {
               title="TAILWIND"
             />
             <ProjectSkills
-              backgroundImage="/assets/skills/html.png"
+              backgroundImage="/assets/skills/gitlab.png"
               title="GITLAB"
             />
           </div>

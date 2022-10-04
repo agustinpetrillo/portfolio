@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router';
-import FifthSection from '../components/FifthSection';
+import dynamic from "next/dynamic";
+const FifthSection = dynamic(() => import('../components/FifthSection'));
 import FirstSection from "../components/FirstSection";
-import FourthSection from '../components/FourthSection';
-import SecondSection from '../components/SecondSection';
-import ThirdSection from '../components/ThirdSection';
+const FourthSection = dynamic(() => import('../components/FourthSection'));
+const SecondSection = dynamic(() => import('../components/SecondSection'));
+const ThirdSection = dynamic(() => import('../components/ThirdSection'));
 import es from '../translations/index/es';
 import en from '../translations/index/en';
 

@@ -1,10 +1,11 @@
 import Background from "./Background";
 import Container from "./Container";
+import dynamic from "next/dynamic";
 import focusAgency from "../public/assets/projects/focus-agency.png";
 import portfolio from "../public/assets/projects/portfolio.png";
 import vonGroup from "../public/assets/projects/von-group.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
-import ProjectsBuilt from "./ProjectsBuilt";
+const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
 import en from "../translations/fourth-section/en";
 import es from "../translations/fourth-section/es";
 import { useRouter } from "next/router";

@@ -40,7 +40,7 @@ const NetflixClone = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/agustinpetrillo/weather-app"
+              href="https://github.com/agustinpetrillo/netflix-clone"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +49,7 @@ const NetflixClone = () => {
               </button>
             </a>
             <a
-              href="https://weather-app-seven-green.vercel.app/"
+              href="https://watch-movies-with-me.vercel.app"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,6 +1,0 @@
-export default {
-    "first": 'Acerca de mi',
-    "second": 'Quien soy',
-    "third": '¡Hola! Gracias por visitar mi portafolio. Mi nombre es Agustin Petrillo y soy un Desarrollador Front-End. Comencé a estudiar programación Java a mediados de 2021 y desde entonces me he estado especializando en el área de desarrollo web. Mi proposito en este momento es continuar incrementando y desarrollando mis conocimientos, asi como también obtener nuevas experiencias laborales que me permitan aplicar mis habilidades de la forma mas eficiente posible, priorizando por sobre todo la experiencia del usuario. En este último tiempo estuve especializandome con el framework NextJS y la libreria TailwindCSS para poder trabajar con proyectos de mayor complejidad de una forma mas efectiva y rápida. Desarrollo mis tareas de una forma responsable y proactiva. Me adapto facilmente a nuevos entornos de trabajo, consiguiendo superar los desafios diarios con perseverancia, promoviendo siempre el respeto y el trabajo en equipo. No dudes en consultar mis redes sociales si te gustaria contactar conmigo.',
-    "fourth": 'Chequea mis otros proyectos',
-}

@@ -1,0 +1,10 @@
+{
+  "first": "Project",
+  "second": "Overview",
+  "title": "Netflix Clone",
+  "description": "This website was developed using Next, the framework with which I currently work. As the title says, it's a Netflix Clone, simple and functional with the tecnologies that I learned to this moment. I use NextAuth to Log In with Google and an API for movies that generates random data.",
+  "back": "Back",
+  "code": "Code",
+  "tecnologies": "Technologies",
+  "titleMain": "Portfolio A.P Projects"
+}

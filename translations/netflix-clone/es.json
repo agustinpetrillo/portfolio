@@ -1,0 +1,10 @@
+{
+  "first": "Proyecto",
+  "second": "Desarrollo",
+  "title": "Clon de Netflix",
+  "description": "Esta web fue desarrollada con Next, el framework con el que trabajo actualmente. Como bien dice el título es un clon de Netflix, simple y funcional hasta donde puedo hacerlo funcional por el momento. Utilizo NextAuth para inicio de sesion mediante Google y una API de películas para generar data random.",
+  "back": "Atras",
+  "code": "Codigo",
+  "tecnologies": "Tecnologías",
+  "titleMain": "Portafolio A.P - Proyectos"
+}

@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const layout = ({ children }) => {
     const router = useRouter();
     const { asPath } = router;
-    const noNav = ['/FocusAgency', '/VonGroup', '/Portfolio', '/WeatherApp', '/NetflixClone'];
+    const noNav = ['/FocusAgency', '/VonGroup', '/Portfolio', '/WeatherApp', '/NetflixClone', '/Ecommerce'];
     return (
         <>
             {noNav.includes(asPath) ? null : <Navbar />}

@@ -1,0 +1,9 @@
+{
+  "first": "Project",
+  "second": "Overview",
+  "description": "This website was developed using Next, the framework with which I currently work. It has an API Rest to see dolar value to calculated prices in USD, an API create by me using locally, a shopping cart and global interaction with other components. As always I use TailwindCSS to write CSS code.",
+  "back": "Back",
+  "code": "Code",
+  "tecnologies": "Technologies",
+  "title": "Portfolio A.P Projects"
+}

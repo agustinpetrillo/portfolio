@@ -1,0 +1,9 @@
+{
+  "first": "Proyecto",
+  "second": "Desarrollo",
+  "description": "Proyecto desarrollado en NextJS. Tiene uso de API Rest para controlar el dolar oficial y blue, una API de ropa creada por mi y usada de forma local, sistema de carrito de compras e interacción global entre componentes. Como siempre utilicé TailwindCSS para estilar.",
+  "back": "Atras",
+  "code": "Codigo",
+  "tecnologies": "Tecnologías",
+  "title": "Portafolio A.P - Proyectos"
+}

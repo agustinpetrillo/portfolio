@@ -6,6 +6,7 @@ import portfolio from "../public/assets/projects/portfolio.png";
 import vonGroup from "../public/assets/projects/von-group.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
+import eCommerce from "../public/assets/projects/e-commerce.png";
 const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
 import en from "../translations/fourth-section/en";
 import es from "../translations/fourth-section/es";
@@ -56,6 +57,12 @@ const FourthSection = () => {
               backgroundImage={portfolio}
               framework="NextJS"
               projectUrl="/Portfolio"
+            />
+            <ProjectsBuilt
+              title="E-commerce web"
+              backgroundImage={eCommerce}
+              framework="NextJS"
+              projectUrl="/Ecommerce"
             />
             <ProjectsBuilt
               title="Netflix Clone"

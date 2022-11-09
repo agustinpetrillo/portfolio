@@ -4,8 +4,8 @@ import Container from "../components/Container";
 import eCommerce from "../public/assets/projects/e-commerce.png";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
-import en from "../translations/focus/en";
-import es from "../translations/focus/es";
+import en from "../translations/e-commerce/en";
+import es from "../translations/e-commerce/es";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 

@@ -49,7 +49,7 @@ const FocusAgency = () => {
               </button>
             </a> */}
             <a
-              href="https://focus-agency-nextjs.vercel.app/"
+              href="https://focus-agency.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >

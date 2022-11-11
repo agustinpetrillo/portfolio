@@ -60,7 +60,7 @@ const Navbar = () => {
         } `}
       >
         <div className="flex justify-between items-center px-8 2xl:px-16">
-          <Link href="/#home">
+          <Link href="/">
             <Image
               src="/assets/logo-nav.png"
               width="40px"
@@ -71,7 +71,7 @@ const Navbar = () => {
           </Link>
           <div>
             <ul className="hidden md:flex">
-              <Link href="/#home">
+              <Link href="/">
                 <li className="ml-10 text-sm uppercase hover:border-b border-b-[#5651e5]">
                   {translate.first}
                 </li>
@@ -169,7 +169,7 @@ const Navbar = () => {
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
                 <div onClick={handleScrollY}>
-                  <Link href="/#home">
+                  <Link href="/">
                     <li className="py-4 text-sm" onClick={handleNav}>
                       {translate.first}
                     </li>

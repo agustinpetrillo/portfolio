@@ -52,24 +52,44 @@ const ThirdSection = () => {
               title="NEXTJS"
             />
             <ProjectSkills
+              backgroundImage="/assets/skills/git.png"
+              title="GIT"
+            />
+            <ProjectSkills
               backgroundImage="/assets/skills/javascript.png"
               title="JAVASCRIPT"
             />
             <ProjectSkills
-              backgroundImage="/assets/skills/react.png"
-              title="REACT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/github1.png"
-              title="GITHUB"
+              backgroundImage="/assets/skills/gitlab.png"
+              title="GITLAB"
             />
             <ProjectSkills
               backgroundImage="/assets/skills/tailwind.png"
               title="TAILWIND"
             />
             <ProjectSkills
-              backgroundImage="/assets/skills/gitlab.png"
-              title="GITLAB"
+              backgroundImage="/assets/skills/react.png"
+              title="REACT"
+            />
+            <ProjectSkills
+              backgroundImage="/assets/skills/firebase.png"
+              title="FIREBASE"
+            />
+            <ProjectSkills
+              backgroundImage="/assets/skills/github1.png"
+              title="GITHUB"
+            />
+            <ProjectSkills
+              backgroundImage="/assets/skills/nuxt.png"
+              title="NUXT"
+            />
+            <ProjectSkills
+              backgroundImage="/assets/skills/flutter.png"
+              title="FLUTTER"
+            />
+            <ProjectSkills
+              backgroundImage="/assets/skills/dart.png"
+              title="DART"
             />
           </div>
         </Container>

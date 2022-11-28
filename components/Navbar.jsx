@@ -72,34 +72,34 @@ const Navbar = () => {
           <div>
             <ul className="hidden md:flex">
               <Link href="/">
-                <li className="ml-10 text-sm uppercase hover:border-b border-b-[#5651e5]">
+                <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.first}
                 </li>
               </Link>
               <Link href="/#about">
-                <li className="ml-10 text-sm uppercase hover:border-b border-b-[#5651e5]">
+                <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.second}
                 </li>
               </Link>
               <Link href="/#skills">
-                <li className="ml-10 text-sm uppercase hover:border-b border-b-[#5651e5]">
+                <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.third}
                 </li>
               </Link>
               <Link href="/#projects">
-                <li className="ml-10 text-sm uppercase hover:border-b border-b-[#5651e5]">
+                <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.fourth}
                 </li>
               </Link>
               <Link href="/#contact">
-                <li className="ml-10 text-sm uppercase hover:border-b border-b-[#5651e5]">
+                <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.fifth}
                 </li>
               </Link>
               <select
                 defaultValue={locale}
                 onChange={changeLenguage}
-                className="ml-10 text-sm font-bold text-white uppercase cursor-pointer bg-[#5651e5] rounded-lg outline-none hover:scale-105 ease-in-out duration-100"
+                className="ml-10 text-sm font-bold text-white uppercase cursor-pointer bg-[#5651e5] rounded-lg outline-none"
               >
                 <option
                   value="en"

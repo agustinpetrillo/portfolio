@@ -32,7 +32,7 @@ const FourthSection = () => {
   return (
     <>
       <Background id="projects" className="min-h-0">
-        <Container className="text-center lg:text-start min-h-0 pb-20 md:pb-32">
+        <Container className="min-h-0 pb-20 text-center lg:text-start md:pb-32">
           <p
             className="uppercase tracking-widest text-[#5651e5]"
             data-aos="fade"
@@ -43,7 +43,7 @@ const FourthSection = () => {
             {translate.second}
           </h2>
           <div
-            className="grid md:grid-cols-2 gap-8 px-4 lg:px-0"
+            className="grid gap-8 px-4 md:grid-cols-2 lg:px-0"
             data-aos="fade"
           >
             <ProjectsBuilt

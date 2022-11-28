@@ -27,7 +27,7 @@ const SecondSection = () => {
       <Background id="about" className="min-h-0">
         <Container className="min-h-0 pb-20 md:pb-32">
           <div
-            className="col-span-2 flex flex-col lg:items-start items-center text-center md:text-start justify-center"
+            className="flex flex-col items-center justify-center col-span-2 text-center lg:items-start md:text-start"
             data-aos="fade"
           >
             <p className="uppercase tracking-widest text-[#5651e5]">
@@ -38,7 +38,7 @@ const SecondSection = () => {
               {translate.third}
             </p>
             <Link href="/#projects">
-              <p className="underline py-2 cursor-pointer text-gray-600">
+              <p className="py-2 text-gray-600 underline cursor-pointer">
                 {translate.fourth}
               </p>
             </Link>

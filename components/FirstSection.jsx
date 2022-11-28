@@ -27,9 +27,9 @@ const FirstSection = () => {
   return (
     <>
       <Background id="home" className="min-h-screen">
-        <Container className="flex items-center justify-center text-center min-h-screen">
+        <Container className="flex items-center justify-center min-h-screen text-center">
           <div className="pt-24 pb-20 md:py-0" data-aos="fade">
-            <p className="uppercase text-sm tracking-widest text-gray-600">
+            <p className="text-sm tracking-widest text-gray-600 uppercase">
               {translate.first}
             </p>
             <h1 className="py-4 text-gray-700">
@@ -39,8 +39,8 @@ const FirstSection = () => {
             <p className="py-4 text-gray-600 max-w-[70%] m-auto">
               {translate.fourth}
             </p>
-            <div className="flex items-center md:justify-between justify-around max-w-xs m-auto pt-4">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-200">
+            <div className="flex items-center justify-around max-w-xs pt-4 m-auto md:justify-between">
+              <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                 <a
                   href="https://www.linkedin.com/in/agustin-petrillo-93300b231/"
                   target="_blank"
@@ -54,7 +54,7 @@ const FirstSection = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-200">
+                <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                   <FaGithub size={20} />
                 </div>
               </a>
@@ -63,7 +63,7 @@ const FirstSection = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-200">
+                <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                   <AiOutlineMail size={20} />
                 </div>
               </a>
@@ -72,12 +72,31 @@ const FirstSection = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                   <RiGitlabFill size={20} />
                 </div>
               </a>
             </div>
           </div>
+          {/* <div id="sfcmwqzzw5tpbbnfglfcwehlb66f32abceg"></div>
+          <script
+            type="text/javascript"
+            src="https://counter5.optistats.ovh/private/counter.js?c=mwqzzw5tpbbnfglfcwehlb66f32abceg&down=async"
+            async
+          ></script>
+          <noscript>
+            <a
+              href="https://www.contadorvisitasgratis.com"
+              title="contadores para blogger"
+            >
+              <img
+                src="https://counter5.optistats.ovh/private/contadorvisitasgratis.php?c=mwqzzw5tpbbnfglfcwehlb66f32abceg"
+                border="0"
+                title="contadores para blogger"
+                alt="contadores para blogger"
+              />
+            </a>
+          </noscript> */}
         </Container>
       </Background>
     </>

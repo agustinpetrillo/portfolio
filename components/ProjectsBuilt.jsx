@@ -16,11 +16,11 @@ const ProjectsBuilt = ({ title, framework, backgroundImage, projectUrl }) => {
           alt="/"
           className="rounded-xl group-hover:opacity-10"
         />
-        <div className="hidden group-hover:block absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 text-center text-white cursor-default">
-          <h4 className="uppercase tracking-wide whitespace-nowrap">{title}</h4>
-          <p className="pb-4 pt-2 font-bold text-base">{framework}</p>
+        <div className="absolute hidden text-center text-white cursor-default group-hover:block top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+          <h4 className="tracking-wide uppercase whitespace-nowrap">{title}</h4>
+          <p className="pt-2 pb-4 text-base font-bold">{framework}</p>
           <Link href={projectUrl}>
-            <p className="p-3 rounded-lg bg-white text-gray-600 font-bold cursor-pointer hover:scale-105 ease-in-out duration-300">
+            <p className="p-3 font-bold text-gray-600 duration-300 ease-in-out bg-white rounded-lg cursor-pointer hover:scale-105">
               {translate.first}
             </p>
           </Link>

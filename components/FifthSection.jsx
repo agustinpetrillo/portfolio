@@ -31,7 +31,7 @@ const FifthSection = () => {
   return (
     <>
       <Background id="contact" className="min-h-0">
-        <Container className="min-h-0 text-center lg:text-start pb-2">
+        <Container className="min-h-0 pb-2 text-center lg:text-start">
           <p
             className="uppercase tracking-widest text-[#5651e5]"
             data-aos="fade"
@@ -42,28 +42,28 @@ const FifthSection = () => {
             {translate.second}
           </h2>
           <div
-            className="grid lg:grid-cols-5 gap-8 lg:px-0 justify-center"
+            className="grid justify-center gap-8 lg:grid-cols-5 lg:px-0"
             data-aos="fade"
           >
             {/* left */}
-            <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
-              <div className="lg:p-4 h-full">
-                <div className="md:hover:scale-105 ease-in-out duration-300">
+            <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl">
+              <div className="h-full lg:p-4">
+                <div className="duration-300 ease-in-out md:hover:scale-105">
                   <Image className="rounded-xl" src={contact} alt="/" />
                 </div>
                 <div>
                   <h2 className="py-2">Agustin Petrillo</h2>
-                  <p className="text-gray-600 tracking-widest">
+                  <p className="tracking-widest text-gray-600">
                     {translate.third}
                   </p>
                   <p className="py-4 text-gray-700">{translate.fourth}</p>
                 </div>
                 <div>
-                  <p className="uppercase pt-8 text-gray-700">
+                  <p className="pt-8 text-gray-700 uppercase">
                     {translate.fifth}
                   </p>
-                  <div className="flex md:justify-center justify-around max-w-xs m-auto pt-4 gap-2">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-200">
+                  <div className="flex justify-around max-w-xs gap-2 pt-4 m-auto md:justify-center">
+                    <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                       <a
                         href="https://www.linkedin.com/in/agustin-petrillo-93300b231/"
                         target="_blank"
@@ -77,7 +77,7 @@ const FifthSection = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-200">
+                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                         <FaGithub size={20} />
                       </div>
                     </a>
@@ -86,7 +86,7 @@ const FifthSection = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in-out duration-200">
+                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                         <AiOutlineMail size={20} />
                       </div>
                     </a>
@@ -95,7 +95,7 @@ const FifthSection = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                         <RiGitlabFill size={20} />
                       </div>
                     </a>
@@ -104,15 +104,15 @@ const FifthSection = () => {
               </div>
             </div>
             {/* right */}
-            <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+            <div className="w-full h-auto col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
               <div className="p-4">
                 <form
                   method="POST"
                   action="https://getform.io/f/02a134d9-abab-4dc1-b8e0-b9acbfc8d138"
                 >
-                  <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                  <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2 text-start">
+                      <label className="py-2 text-sm uppercase text-start">
                         {translate.name}
                       </label>
                       <input
@@ -123,7 +123,7 @@ const FifthSection = () => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2 text-start">
+                      <label className="py-2 text-sm uppercase text-start">
                         {translate.phone}
                       </label>
                       <input
@@ -135,7 +135,7 @@ const FifthSection = () => {
                     </div>
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2 text-start">
+                    <label className="py-2 text-sm uppercase text-start">
                       {translate.email}
                     </label>
                     <input
@@ -146,7 +146,7 @@ const FifthSection = () => {
                     />
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2 text-start">
+                    <label className="py-2 text-sm uppercase text-start">
                       {translate.subject}
                     </label>
                     <input
@@ -157,7 +157,7 @@ const FifthSection = () => {
                     />
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2 text-start">
+                    <label className="py-2 text-sm uppercase text-start">
                       {translate.messaje}
                     </label>
                     <textarea
@@ -167,7 +167,7 @@ const FifthSection = () => {
                       name="Message"
                     />
                   </div>
-                  <button className="w-full p-4 text-gray-100 mt-4 hover:scale-105 duration-200 ease-in-out">
+                  <button className="w-full p-4 mt-4 text-gray-100 duration-200 ease-in-out hover:scale-105">
                     {translate.sendMessage}
                   </button>
                 </form>
@@ -176,7 +176,7 @@ const FifthSection = () => {
           </div>
           <div className="flex justify-center py-12">
             <Link href="/">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in-out duration-200">
+              <div className="p-4 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
                 <HiOutlineChevronDoubleUp
                   size={20}
                   className="text-[#5651e5]"

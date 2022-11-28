@@ -59,7 +59,7 @@ const Navbar = () => {
           show && "md:-translate-y-16 duration-300 ease-in-out"
         } `}
       >
-        <div className="flex justify-between items-center px-8 2xl:px-16">
+        <div className="flex items-center justify-between px-8 2xl:px-16">
           <Link href="/">
             <Image
               src="/assets/logo-nav.png"
@@ -136,7 +136,7 @@ const Navbar = () => {
             }
           >
             <div className="pt-5">
-              <div className="flex w-full items-center justify-between">
+              <div className="flex items-center justify-between w-full">
                 <select
                   defaultValue={locale}
                   onChange={changeLenguage}
@@ -157,16 +157,16 @@ const Navbar = () => {
                 </select>
                 <div
                   onClick={handleNav}
-                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200"
+                  className="p-3 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105"
                 >
                   <AiOutlineClose size={15} onClick={handleScrollY} />
                 </div>
               </div>
-              <div className="border-b border-b-gray-300 my-4">
+              <div className="my-4 border-b border-b-gray-300">
                 <p className="w-[85%] md:w-[90%] py-2">{translate.portfolio}</p>
               </div>
             </div>
-            <div className="py-4 flex flex-col">
+            <div className="flex flex-col py-4">
               <ul className="uppercase">
                 <div onClick={handleScrollY}>
                   <Link href="/">
@@ -208,8 +208,8 @@ const Navbar = () => {
                 <p className="tracking-widest text-[#5651e5]">
                   {translate.connect}
                 </p>
-                <div className="flex justify-center py-4 w-full sm:w-4/5 gap-1">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                <div className="flex justify-center w-full gap-1 py-4 sm:w-4/5">
+                  <div className="p-3 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                     <a
                       href="https://www.linkedin.com/in/agustin-petrillo-93300b231/"
                       target="_blank"
@@ -223,7 +223,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                    <div className="p-3 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                       <FaGithub size={20} />
                     </div>
                   </a>
@@ -232,7 +232,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                    <div className="p-3 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                       <AiOutlineMail size={20} />
                     </div>
                   </a>
@@ -241,7 +241,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-200">
+                    <div className="p-3 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
                       <RiGitlabFill size={20} />
                     </div>
                   </a>

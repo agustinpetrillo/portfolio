@@ -33,7 +33,7 @@ const NetflixClone = () => {
           </div>
         </div>
       </div>
-      <Container className="grid md:grid-cols-5 gap-8 py-12 text-center md:text-start px-8 lg:px-0 min-h-0">
+      <Container className="grid min-h-0 gap-8 px-8 py-12 text-center md:grid-cols-5 md:text-start lg:px-0">
         <div className="col-span-4">
           <p className="uppercase text-[#5651e5] pb-2">{translate.first}</p>
           <h2 className="pb-4">{translate.second}</h2>
@@ -44,7 +44,7 @@ const NetflixClone = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="px-7 py-2 mt-4 mr-8 hover:scale-110 ease-in-out duration-300">
+              <button className="py-2 mt-4 mr-8 duration-300 ease-in-out px-7 hover:scale-110">
                 {translate.code}
               </button>
             </a>
@@ -53,31 +53,31 @@ const NetflixClone = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="px-7 py-2 mt-4 hover:scale-110 ease-in-out duration-300">
+              <button className="py-2 mt-4 duration-300 ease-in-out px-7 hover:scale-110">
                 Demo
               </button>
             </a>
           </div>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center px-2">
+        <div className="flex items-center justify-center col-span-4 px-2 shadow-xl md:col-span-1 shadow-gray-400 rounded-xl">
           <div>
-            <p className="text-center font-bold pb-2 tracking-tight">
+            <p className="pb-2 font-bold tracking-tight text-center">
               {translate.tecnologies}
             </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center tracking-tight">
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-gray-600 py-2 flex items-center tracking-tight">
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
-              <p className="text-gray-600 py-2 flex items-center tracking-tight">
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
-              <p className="text-gray-600 py-2 flex items-center tracking-tight">
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Movies API
               </p>
-              <p className="text-gray-600 py-2 flex items-center tracking-tight">
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> NextAuth
               </p>
             </div>
@@ -85,7 +85,7 @@ const NetflixClone = () => {
         </div>
         <Link href="/#projects">
           <div className="pt-10">
-            <p className="cursor-pointer py-3 rounded-2xl bg-gray-900 text-white flex items-center justify-center w-24 hover:scale-105 ease-in-out duration-200">
+            <p className="flex items-center justify-center w-24 py-3 text-white duration-200 ease-in-out bg-gray-900 cursor-pointer rounded-2xl hover:scale-105">
               {translate.back}
             </p>
           </div>

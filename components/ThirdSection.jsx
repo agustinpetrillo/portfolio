@@ -25,7 +25,7 @@ const ThirdSection = () => {
   return (
     <>
       <Background id="skills" className="min-h-0">
-        <Container className="text-center lg:text-start min-h-0 pb-20 md:pb-32 flex flex-col items-center md:block">
+        <Container className="flex flex-col items-center min-h-0 pb-20 text-center lg:text-start md:pb-32 md:block">
           <p
             className="uppercase tracking-widest text-[#5651e5]"
             data-aos="fade"
@@ -36,7 +36,7 @@ const ThirdSection = () => {
             {translate.second}
           </h2>
           <div
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-12 md:px-5 lg:px-0"
+            className="grid gap-8 px-12 md:grid-cols-2 lg:grid-cols-4 md:px-5 lg:px-0"
             data-aos="fade"
           >
             <ProjectSkills

@@ -4,7 +4,7 @@ const ProjectSkills = ({ backgroundImage, title }) => {
   return (
     <>
       <div className="flex justify-center py-6 duration-300 ease-in-out shadow-xl rounded-xl md:md:hover:scale-105">
-        <div className="grid items-center justify-center grid-cols-2 gap-4">
+        <div className="grid items-center justify-center grid-cols-2 gap-4 cursor-default">
           <div className="m-auto">
             <Image
               src={backgroundImage}

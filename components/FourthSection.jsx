@@ -3,7 +3,7 @@ import Container from "./Container";
 import dynamic from "next/dynamic";
 import focusAgency from "../public/assets/projects/focus-agency.png";
 import portfolio from "../public/assets/projects/portfolio.png";
-import vonGroup from "../public/assets/projects/von-group.png";
+import gameQuiz from "../public/assets/projects/game-quiz.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
 import eCommerce from "../public/assets/projects/e-commerce.png";
@@ -77,10 +77,10 @@ const FourthSection = () => {
               projectUrl="/WeatherApp"
             />
             <ProjectsBuilt
-              title="Von Group"
-              backgroundImage={vonGroup}
+              title="Game Quiz"
+              backgroundImage={gameQuiz}
               framework="NextJS"
-              projectUrl="/VonGroup"
+              projectUrl="/GameQuiz"
             />
           </div>
         </Container>

@@ -1,0 +1,9 @@
+{
+  "first": "Projecto",
+  "second": "Desarrollo",
+  "description": "Esta web fue desarrollada con Next, el framework con el que trabajo actualmente. Es un juego web que puedes jugar solo o con algun amigo de forma local (por el momento). El diseño es bastante minimalista y simple, y cuenta con un fondo unico en todas las secciones, y contiene la tecnólogia dark o light mode. Como de costumbre, de libreria de estilado utilicé TailwindCSS.",
+  "back": "Atras",
+  "code": "Codigo",
+  "tecnologies": "Tecnologías",
+  "title": "Portafolio A.P - Proyectos"
+}

@@ -1,0 +1,9 @@
+{
+  "first": "Project",
+  "second": "Overview",
+  "description": "This website was developed with Next, the framework with which I currently work. It's a game app that you can play alone o with a friend (locally). The design is user-friendly, simple and minimalistic, with a unique background in each section, and contain dark or light mode. As is customary, I employed the TailwindCSS library.",
+  "back": "Back",
+  "code": "Code",
+  "tecnologies": "Technologies",
+  "title": "Portfolio A.P Projects"
+}

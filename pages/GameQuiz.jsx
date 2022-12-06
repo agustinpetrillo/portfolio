@@ -1,34 +1,34 @@
 import Image from "next/image";
 import Background from "../components/Background";
 import Container from "../components/Container";
-import vonGroup from "../public/assets/projects/von-group.png";
+import gameQuiz from "../public/assets/projects/game-quiz.png";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
-import es from "../translations/vongroup/es";
-import en from "../translations/vongroup/en";
+import es from "../translations/game-quiz/es";
+import en from "../translations/game-quiz/en";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-const VonGroup = () => {
+const GameQuiz = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
   useEffect(() => {
     document.title = translate.title;
-  }, []);
+  });
   return (
     <Background className="min-h-0">
       <div className="w-full h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/75">
           <Image
-            src={vonGroup}
+            src={gameQuiz}
             alt="/"
             layout="fill"
             objectFit="cover"
             className="absolute -z-10"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 px-6">
-            <h2 className="py-2">Von Group</h2>
+            <h2 className="py-2">Game Quiz</h2>
             <h3>NextJS / TailwindCSS</h3>
           </div>
         </div>
@@ -39,17 +39,17 @@ const VonGroup = () => {
           <h2 className="pb-4">{translate.second}</h2>
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
-            {/* <a
-              href="https://gitlab.com/agustinpetrillo1/focus-von-group"
+            <a
+              href="https://github.com/agustinpetrillo/game-quiz"
               target="_blank"
               rel="noreferrer"
             >
               <button className="py-2 mt-4 mr-8 duration-300 ease-in-out px-7 hover:scale-110">
                 {translate.code}
               </button>
-            </a> */}
+            </a>
             <a
-              href="https://von-group.vercel.app/"
+              href="https://game-quiz-nine.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -75,10 +75,10 @@ const VonGroup = () => {
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
-                <RiRadioButtonFill className="pr-1" /> AOS
+                <RiRadioButtonFill className="pr-1" /> Next Theme
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
-                <RiRadioButtonFill className="pr-1" /> React Carousel
+                <RiRadioButtonFill className="pr-1" /> Local Storage
               </p>
             </div>
           </div>
@@ -95,4 +95,4 @@ const VonGroup = () => {
   );
 };
 
-export default VonGroup;
+export default GameQuiz;

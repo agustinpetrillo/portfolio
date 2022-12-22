@@ -1,6 +1,6 @@
 type Props = {
   children: JSX.Element | JSX.Element[];
-  className: string;
+  className?: string;
 };
 
 const Container = ({ children, className }: Props) => {

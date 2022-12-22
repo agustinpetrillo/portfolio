@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 // import Footer from "../components/Footer";
 
 type Props = {
-  children: JSX.Element | JSX.Element[];
+  children: JSX.Element;
 };
 
 const Layout = ({ children }: Props) => {

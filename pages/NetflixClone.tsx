@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Background from "../components/Background";
 import Container from "../components/Container";
-import focusAgency from "../public/assets/projects/focus-agency.png";
+import netflixClone from "../public/assets/projects/netflix-clone.png";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
-import en from "../translations/focus/en";
-import es from "../translations/focus/es";
+import es from "../translations/netflix-clone/es.json";
+import en from "../translations/netflix-clone/en.json";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-const FocusAgency = () => {
+const NetflixClone = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
@@ -21,14 +21,14 @@ const FocusAgency = () => {
       <div className="w-full h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/75">
           <Image
-            src={focusAgency}
+            src={netflixClone}
             alt="/"
             layout="fill"
             objectFit="cover"
             className="absolute -z-10"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 px-6">
-            <h2 className="py-2">Focus Agency</h2>
+            <h2 className="py-2">{translate.title}</h2>
             <h3>NextJS / TailwindCSS</h3>
           </div>
         </div>
@@ -39,17 +39,17 @@ const FocusAgency = () => {
           <h2 className="pb-4">{translate.second}</h2>
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
-            {/* <a
-              href="https://gitlab.com/agustinpetrillo1/focus-agency-nextjs"
+            <a
+              href="https://github.com/agustinpetrillo/netflix-clone"
               target="_blank"
               rel="noreferrer"
             >
               <button className="py-2 mt-4 mr-8 duration-300 ease-in-out px-7 hover:scale-110">
                 {translate.code}
               </button>
-            </a> */}
+            </a>
             <a
-              href="https://focus-agency.vercel.app/"
+              href="https://watch-movies-with-me.vercel.app"
               target="_blank"
               rel="noreferrer"
             >
@@ -75,14 +75,17 @@ const FocusAgency = () => {
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
-                <RiRadioButtonFill className="pr-1" /> AOS
+                <RiRadioButtonFill className="pr-1" /> Movies API
+              </p>
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
+                <RiRadioButtonFill className="pr-1" /> NextAuth
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
           <div className="pt-10">
-            <p className="flex items-center justify-center w-24 py-2 text-white duration-200 ease-in-out bg-gray-900 cursor-pointer rounded-2xl hover:scale-105">
+            <p className="flex items-center justify-center w-24 py-3 text-white duration-200 ease-in-out bg-gray-900 cursor-pointer rounded-2xl hover:scale-105">
               {translate.back}
             </p>
           </div>
@@ -92,4 +95,4 @@ const FocusAgency = () => {
   );
 };
 
-export default FocusAgency;
+export default NetflixClone;

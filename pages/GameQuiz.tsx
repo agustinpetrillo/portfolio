@@ -1,34 +1,34 @@
 import Image from "next/image";
 import Background from "../components/Background";
 import Container from "../components/Container";
-import weatherApp from "../public/assets/projects/weather-app.png";
+import gameQuiz from "../public/assets/projects/game-quiz.png";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
-import es from "../translations/weather-app/es";
-import en from "../translations/weather-app/en";
+import es from "../translations/game-quiz/es.json";
+import en from "../translations/game-quiz/en.json";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-const WeatherApp = () => {
+const GameQuiz = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
   useEffect(() => {
     document.title = translate.title;
-  }, []);
+  });
   return (
     <Background className="min-h-0">
       <div className="w-full h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/75">
           <Image
-            src={weatherApp}
+            src={gameQuiz}
             alt="/"
             layout="fill"
             objectFit="cover"
             className="absolute -z-10"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 px-6">
-            <h2 className="py-2">{translate.title}</h2>
+            <h2 className="py-2">Game Quiz</h2>
             <h3>NextJS / TailwindCSS</h3>
           </div>
         </div>
@@ -40,7 +40,7 @@ const WeatherApp = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/agustinpetrillo/weather-app"
+              href="https://github.com/agustinpetrillo/game-quiz"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +49,7 @@ const WeatherApp = () => {
               </button>
             </a>
             <a
-              href="https://weather-app-seven-green.vercel.app/"
+              href="https://game-quiz-nine.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -75,7 +75,10 @@ const WeatherApp = () => {
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
-                <RiRadioButtonFill className="pr-1" /> Weather API
+                <RiRadioButtonFill className="pr-1" /> Next Theme
+              </p>
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
+                <RiRadioButtonFill className="pr-1" /> Local Storage
               </p>
             </div>
           </div>
@@ -92,4 +95,4 @@ const WeatherApp = () => {
   );
 };
 
-export default WeatherApp;
+export default GameQuiz;

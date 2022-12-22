@@ -7,8 +7,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { RiGitlabFill } from "react-icons/ri";
 import Link from "next/link";
-import en from "../translations/fifth-section/en";
-import es from "../translations/fifth-section/es";
+import en from "../translations/fifth-section/en.json";
+import es from "../translations/fifth-section/es.json";
 import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -161,7 +161,6 @@ const FifthSection = () => {
                       {translate.messaje}
                     </label>
                     <textarea
-                      type="text"
                       className="text-sm p-3 border-2 rounded-lg flex border-gray-300 resize-none h-40 outline-[#5651e591]"
                       placeholder={translate.messaje}
                       name="Message"

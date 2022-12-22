@@ -2,7 +2,11 @@ import { useRouter } from "next/router";
 import Navbar from "../components/Navbar";
 // import Footer from "../components/Footer";
 
-const Layout = ({ children }) => {
+type Props = {
+  children: JSX.Element | JSX.Element[];
+};
+
+const Layout = ({ children }: Props) => {
   const router = useRouter();
   const { asPath } = router;
   const noNav = [

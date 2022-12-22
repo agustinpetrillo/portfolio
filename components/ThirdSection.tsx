@@ -1,8 +1,8 @@
 import Background from "./Background";
 import Container from "./Container";
-import ProjectSkills from "../components/ProjectSkills";
-import en from "../translations/third-section/en";
-import es from "../translations/third-section/es";
+import ProjectSkills from "./ProjectSkills";
+import en from "../translations/third-section/en.json";
+import es from "../translations/third-section/es.json";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import AOS from "aos";

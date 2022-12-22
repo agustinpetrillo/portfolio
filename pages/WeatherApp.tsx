@@ -1,27 +1,27 @@
 import Image from "next/image";
 import Background from "../components/Background";
 import Container from "../components/Container";
-import focusAgency from "../public/assets/projects/portfolio.png";
+import weatherApp from "../public/assets/projects/weather-app.png";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
-import es from "../translations/portfolio/es";
-import en from "../translations/portfolio/en";
+import es from "../translations/weather-app/es.json";
+import en from "../translations/weather-app/en.json";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-const Portfolio = () => {
+const WeatherApp = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
   useEffect(() => {
-    document.title = translate.titleMain;
+    document.title = translate.title;
   }, []);
   return (
     <Background className="min-h-0">
       <div className="w-full h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/75">
           <Image
-            src={focusAgency}
+            src={weatherApp}
             alt="/"
             layout="fill"
             objectFit="cover"
@@ -40,7 +40,7 @@ const Portfolio = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/agustinpetrillo/portfolio"
+              href="https://github.com/agustinpetrillo/weather-app"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +49,7 @@ const Portfolio = () => {
               </button>
             </a>
             <a
-              href="https://portfolio-cyan-one-43.vercel.app/"
+              href="https://weather-app-seven-green.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -75,7 +75,7 @@ const Portfolio = () => {
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
-                <RiRadioButtonFill className="pr-1" /> AOS
+                <RiRadioButtonFill className="pr-1" /> Weather API
               </p>
             </div>
           </div>
@@ -92,4 +92,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default WeatherApp;

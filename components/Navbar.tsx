@@ -5,17 +5,17 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { RiGitlabFill } from "react-icons/ri";
-import es from "../translations/navbar/es";
-import en from "../translations/navbar/en";
+import es from "../translations/navbar/es.json";
+import en from "../translations/navbar/en.json";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState<boolean>(false);
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const [show, setShow] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [show, setShow] = useState<boolean>(false);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
 
   const controlNavbar = () => {
     if (window.scrollY < lastScrollY) {
@@ -39,12 +39,12 @@ const Navbar = () => {
   const { locale } = router;
   const translate = locale === "en" ? en : es;
 
-  const changeLenguage = (e) => {
+  const changeLenguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const locale = e.target.value;
     router.push("/", "/", { locale });
   };
 
-  const [rotate, setRotate] = useState(false);
+  const [rotate, setRotate] = useState<boolean>(false);
   const handleScrollY = () => {
     !rotate
       ? (document.body.style.overflow = "hidden")
@@ -98,7 +98,7 @@ const Navbar = () => {
               </Link>
               <select
                 defaultValue={locale}
-                onChange={changeLenguage}
+                onChange={(e) => changeLenguage(e)}
                 className="ml-10 text-sm font-bold text-white uppercase cursor-pointer bg-[#5651e5] rounded-lg outline-none"
               >
                 <option
@@ -139,7 +139,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between w-full">
                 <select
                   defaultValue={locale}
-                  onChange={changeLenguage}
+                  onChange={(e) => changeLenguage(e)}
                   className="text-sm font-bold text-white uppercase cursor-pointer bg-[#5651e5] rounded-lg outline-none"
                 >
                   <option

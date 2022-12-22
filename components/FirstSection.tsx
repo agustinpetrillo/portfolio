@@ -1,11 +1,11 @@
-import Background from "../components/Background";
-import Container from "../components/Container";
+import Background from "./Background";
+import Container from "./Container";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { RiGitlabFill } from "react-icons/ri";
 import { useRouter } from "next/router";
-import es from "../translations/first-section/es";
-import en from "../translations/first-section/en";
+import es from "../translations/first-section/es.json";
+import en from "../translations/first-section/en.json";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,15 +1,16 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router';
+import { NextPage } from "next";
+import Head from "next/head";
+import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
-const FifthSection = dynamic(() => import('../components/FifthSection'));
+const FifthSection = dynamic(() => import("../components/FifthSection"));
 import FirstSection from "../components/FirstSection";
-const FourthSection = dynamic(() => import('../components/FourthSection'));
-const SecondSection = dynamic(() => import('../components/SecondSection'));
-const ThirdSection = dynamic(() => import('../components/ThirdSection'));
-import es from '../translations/index/es';
-import en from '../translations/index/en';
+const FourthSection = dynamic(() => import("../components/FourthSection"));
+const SecondSection = dynamic(() => import("../components/SecondSection"));
+const ThirdSection = dynamic(() => import("../components/ThirdSection"));
+import es from "../translations/index/es.json";
+import en from "../translations/index/en.json";
 
-export default function Home() {
+const Home: NextPage = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
@@ -31,4 +32,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

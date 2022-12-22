@@ -1,6 +1,11 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-const ProjectSkills = ({ backgroundImage, title }) => {
+type Props = {
+  backgroundImage: StaticImageData | string;
+  title: string;
+};
+
+const ProjectSkills = ({ backgroundImage, title }: Props) => {
   return (
     <>
       <div className="flex justify-center py-6 duration-300 ease-in-out shadow-xl rounded-xl md:md:hover:scale-105">

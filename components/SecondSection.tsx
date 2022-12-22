@@ -1,7 +1,7 @@
 import Background from "./Background";
 import Container from "./Container";
-import es from "../translations/second-section/es";
-import en from "../translations/second-section/en";
+import es from "../translations/second-section/es.json";
+import en from "../translations/second-section/en.json";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import AOS from "aos";

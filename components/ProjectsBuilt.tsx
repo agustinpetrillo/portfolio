@@ -1,10 +1,22 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import es from "../translations/project-built/es";
-import en from "../translations/project-built/en";
+import es from "../translations/project-built/es.json";
+import en from "../translations/project-built/en.json";
 
-const ProjectsBuilt = ({ title, framework, backgroundImage, projectUrl }) => {
+type Props = {
+  title: string;
+  framework: string;
+  backgroundImage: StaticImageData | string;
+  projectUrl: string;
+};
+
+const ProjectsBuilt = ({
+  title,
+  framework,
+  backgroundImage,
+  projectUrl,
+}: Props) => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;

@@ -63,7 +63,7 @@ const FocusAgency = () => {
                 <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> Typescript
               </p>
               <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> AOS

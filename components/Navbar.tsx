@@ -17,17 +17,16 @@ const Navbar = () => {
   const [show, setShow] = useState<boolean>(false);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
 
-  const controlNavbar = () => {
-    if (window.scrollY < lastScrollY) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-
-    setLastScrollY(window.scrollY);
-  };
-
   useEffect(() => {
+    const controlNavbar = () => {
+      if (window.scrollY < lastScrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+
+      setLastScrollY(window.scrollY);
+    };
     window.addEventListener("scroll", controlNavbar);
 
     return () => {
@@ -55,7 +54,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`fixed w-full min-h-0 md:py-3 py-2 shadow-xl z-50 bg-[#ecf0f3] duration-300 ease-in-out ${
+        className={`fixed w-full min-h-0 md:py-3 py-2 shadow-xl z-50 bg-[#ecf0f3] dark:bg-gray-800 duration-300 ease-in-out ${
           show && "md:-translate-y-16 duration-300 ease-in-out"
         } `}
       >

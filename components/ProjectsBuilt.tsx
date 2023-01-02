@@ -22,7 +22,7 @@ const ProjectsBuilt = ({
   const translate = locale === "en" ? en : es;
   return (
     <>
-      <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+      <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-700 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
         <Image
           src={backgroundImage}
           alt="/"
@@ -32,7 +32,7 @@ const ProjectsBuilt = ({
           <h4 className="tracking-wide uppercase whitespace-nowrap">{title}</h4>
           <p className="pt-2 pb-4 text-base font-bold">{framework}</p>
           <Link href={projectUrl}>
-            <p className="p-3 font-bold text-gray-600 duration-300 ease-in-out bg-white rounded-lg cursor-pointer hover:scale-105">
+            <p className="p-3 font-bold text-gray-600 duration-300 ease-in-out bg-white rounded-lg cursor-pointer dark:text-gray-600 hover:scale-105">
               {translate.first}
             </p>
           </Link>

@@ -46,7 +46,7 @@ const FifthSection = () => {
             data-aos="fade"
           >
             {/* left */}
-            <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl">
+            <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 dark:shadow-gray-700 rounded-xl">
               <div className="h-full lg:p-4">
                 <div className="duration-300 ease-in-out md:hover:scale-105">
                   <Image className="rounded-xl" src={contact} alt="/" />
@@ -63,7 +63,7 @@ const FifthSection = () => {
                     {translate.fifth}
                   </p>
                   <div className="flex justify-around max-w-xs gap-2 pt-4 m-auto md:justify-center">
-                    <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
+                    <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-gray-700 hover:scale-110">
                       <a
                         href="https://www.linkedin.com/in/agustin-petrillo-93300b231/"
                         target="_blank"
@@ -77,7 +77,7 @@ const FifthSection = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
+                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-gray-700 hover:scale-110">
                         <FaGithub size={20} />
                       </div>
                     </a>
@@ -86,7 +86,7 @@ const FifthSection = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
+                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-gray-700 hover:scale-110">
                         <AiOutlineMail size={20} />
                       </div>
                     </a>
@@ -95,7 +95,7 @@ const FifthSection = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                      <div className="p-6 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-gray-700 hover:scale-105">
                         <RiGitlabFill size={20} />
                       </div>
                     </a>
@@ -104,7 +104,7 @@ const FifthSection = () => {
               </div>
             </div>
             {/* right */}
-            <div className="w-full h-auto col-span-3 shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+            <div className="w-full h-auto col-span-3 shadow-xl shadow-gray-400 dark:shadow-gray-700 rounded-xl lg:p-4">
               <div className="p-4">
                 <form
                   method="POST"
@@ -117,7 +117,7 @@ const FifthSection = () => {
                       </label>
                       <input
                         type="text"
-                        className="text-sm p-3 border-2 rounded-lg flex border-gray-300 outline-[#5651e591]"
+                        className="text-sm p-3 border-2 rounded-lg flex border-gray-300 dark:border-gray-700 outline-[#5651e591]"
                         placeholder={translate.name}
                         name="Name"
                       />
@@ -128,7 +128,7 @@ const FifthSection = () => {
                       </label>
                       <input
                         type="number"
-                        className="text-sm p-3 border-2 rounded-lg flex border-gray-300 outline-[#5651e591]"
+                        className="text-sm p-3 border-2 rounded-lg flex border-gray-300 dark:border-gray-700 outline-[#5651e591]"
                         placeholder={translate.phone}
                         name="Phone"
                       />
@@ -140,7 +140,7 @@ const FifthSection = () => {
                     </label>
                     <input
                       type="email"
-                      className="text-sm p-3 border-2 rounded-lg flex border-gray-300 outline-[#5651e591]"
+                      className="text-sm p-3 border-2 rounded-lg flex border-gray-300 dark:border-gray-700 outline-[#5651e591]"
                       placeholder={translate.email}
                       name="Email"
                     />
@@ -151,22 +151,22 @@ const FifthSection = () => {
                     </label>
                     <input
                       type="text"
-                      className="text-sm p-3 border-2 rounded-lg flex border-gray-300 outline-[#5651e591]"
+                      className="text-sm p-3 border-2 rounded-lg flex border-gray-300 dark:border-gray-700 outline-[#5651e591]"
                       placeholder={translate.subject}
                       name="Subject"
                     />
                   </div>
                   <div className="flex flex-col py-2">
                     <label className="py-2 text-sm uppercase text-start">
-                      {translate.messaje}
+                      {translate.message}
                     </label>
                     <textarea
-                      className="text-sm p-3 border-2 rounded-lg flex border-gray-300 resize-none h-40 outline-[#5651e591]"
-                      placeholder={translate.messaje}
+                      className="text-sm p-3 border-2 rounded-lg flex border-gray-300 dark:border-gray-700 resize-none h-40 outline-[#5651e591]"
+                      placeholder={translate.message}
                       name="Message"
                     />
                   </div>
-                  <button className="w-full p-4 mt-4 text-gray-100 duration-200 ease-in-out hover:scale-105">
+                  <button className="w-full p-4 mt-4 text-gray-100 duration-200 ease-in-out dark:shadow-gray-700 hover:scale-105">
                     {translate.sendMessage}
                   </button>
                 </form>
@@ -175,10 +175,10 @@ const FifthSection = () => {
           </div>
           <div className="flex justify-center py-12">
             <Link href="/">
-              <div className="p-4 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110">
+              <div className="p-4 duration-200 ease-in-out rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-gray-700 hover:scale-110">
                 <HiOutlineChevronDoubleUp
                   size={20}
-                  className="text-[#5651e5]"
+                  className="text-[#5651e5] dark:text-gray-400"
                 />
               </div>
             </Link>

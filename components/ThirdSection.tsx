@@ -60,6 +60,10 @@ const ThirdSection = () => {
               title="JAVASCRIPT"
             />
             <ProjectSkills
+              backgroundImage="/assets/skills/typescript.png"
+              title="TYPESCRIPT"
+            />
+            <ProjectSkills
               backgroundImage="/assets/skills/gitlab.png"
               title="GITLAB"
             />

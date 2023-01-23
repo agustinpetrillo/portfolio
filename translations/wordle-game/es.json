@@ -1,0 +1,9 @@
+{
+  "first": "Proyecto",
+  "second": "Desarrollo",
+  "description": "Esta web fue desarrollada con React Vite y Typescript principalmente. El proyecto está basado en el Wordle original de NYTimes. El diccionario fue buscado en github y traido de forma local al proyecto, donde se hace un fetch para guardar todas las palabras en un state.",
+  "back": "Atras",
+  "code": "Codigo",
+  "tecnologies": "Tecnologías",
+  "title": "Portafolio A.P - Proyectos"
+}

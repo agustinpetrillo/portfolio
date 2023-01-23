@@ -1,0 +1,9 @@
+{
+  "first": "Project",
+  "second": "Overview",
+  "description": "This website was developed with React Vite and Typescript. This project is based on the original Wordle provided by NYTimes. The dictionary was locally imported to the project, where with a fetch the information is brought.",
+  "back": "Back",
+  "code": "Code",
+  "tecnologies": "Technologies",
+  "title": "Portfolio A.P Projects"
+}

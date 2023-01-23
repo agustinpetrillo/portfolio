@@ -7,6 +7,7 @@ import gameQuiz from "../public/assets/projects/game-quiz.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
 import eCommerce from "../public/assets/projects/e-commerce.png";
+import wordleGame from "../public/assets/projects/wordle-game.png";
 const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
 import en from "../translations/fourth-section/en.json";
 import es from "../translations/fourth-section/es.json";
@@ -63,6 +64,12 @@ const FourthSection = () => {
               backgroundImage={eCommerce}
               framework="NextJS"
               projectUrl="/Ecommerce"
+            />
+            <ProjectsBuilt
+              title="Wordle Game"
+              backgroundImage={wordleGame}
+              framework="NextJS"
+              projectUrl="/WordleGame"
             />
             <ProjectsBuilt
               title="Netflix Clone"

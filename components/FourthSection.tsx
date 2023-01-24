@@ -68,7 +68,7 @@ const FourthSection = () => {
             <ProjectsBuilt
               title="Wordle Game"
               backgroundImage={wordleGame}
-              framework="NextJS"
+              framework="Vite"
               projectUrl="/WordleGame"
             />
             <ProjectsBuilt

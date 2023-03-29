@@ -17,6 +17,7 @@ const Layout = ({ children }: Props) => {
     "/NetflixClone",
     "/Ecommerce",
     "/WordleGame",
+    "/Testing",
   ];
   return (
     <>

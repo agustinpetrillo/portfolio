@@ -56,6 +56,10 @@ const ThirdSection = () => {
               title="GIT"
             />
             <ProjectSkills
+              backgroundImage="/assets/skills/react.png"
+              title="REACT"
+            />
+            <ProjectSkills
               backgroundImage="/assets/skills/javascript.png"
               title="JAVASCRIPT"
             />
@@ -72,10 +76,6 @@ const ThirdSection = () => {
               title="TAILWIND"
             />
             <ProjectSkills
-              backgroundImage="/assets/skills/react.png"
-              title="REACT"
-            />
-            <ProjectSkills
               backgroundImage="/assets/skills/firebase.png"
               title="FIREBASE"
             />
@@ -88,12 +88,16 @@ const ThirdSection = () => {
               title="NUXT"
             />
             <ProjectSkills
-              backgroundImage="/assets/skills/flutter.png"
-              title="FLUTTER"
+              backgroundImage="/assets/skills/robot-framework.png"
+              title="ROBOT"
             />
             <ProjectSkills
-              backgroundImage="/assets/skills/dart.png"
-              title="DART"
+              backgroundImage="/assets/skills/selenium.png"
+              title="SELENIUM"
+            />
+            <ProjectSkills
+              backgroundImage="/assets/skills/python.png"
+              title="PYTHON"
             />
           </div>
         </Container>

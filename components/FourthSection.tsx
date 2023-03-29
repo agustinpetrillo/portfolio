@@ -8,6 +8,7 @@ import weatherApp from "../public/assets/projects/weather-app.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
 import eCommerce from "../public/assets/projects/e-commerce.png";
 import wordleGame from "../public/assets/projects/wordle-game.png";
+import testing from "../public/assets/projects/testing.png";
 const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
 import en from "../translations/fourth-section/en.json";
 import es from "../translations/fourth-section/es.json";
@@ -43,6 +44,9 @@ const FourthSection = () => {
           <h2 className="py-4" data-aos="fade">
             {translate.second}
           </h2>
+          <h4 data-aos="fade" className="pb-4">
+            Front-End
+          </h4>
           <div
             className="grid gap-8 px-4 md:grid-cols-2 lg:px-0"
             data-aos="fade"
@@ -88,6 +92,20 @@ const FourthSection = () => {
               backgroundImage={gameQuiz}
               framework="NextJS"
               projectUrl="/GameQuiz"
+            />
+          </div>
+          <h4 className="py-4" data-aos="fade">
+            Testing
+          </h4>
+          <div
+            className="grid gap-8 px-4 md:grid-cols-2 lg:px-0"
+            data-aos="fade"
+          >
+            <ProjectsBuilt
+              title="Testing"
+              backgroundImage={testing}
+              framework="Robot Framework"
+              projectUrl="/Testing"
             />
           </div>
         </Container>

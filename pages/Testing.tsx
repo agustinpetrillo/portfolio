@@ -40,7 +40,7 @@ const FocusAgency = () => {
           <p>{translate.description}</p>
           <div className="py-5 md:py-3">
             <a
-              href="https://github.com/agustinpetrillo/e-commerce"
+              href="https://github.com/agustinpetrillo/testing"
               target="_blank"
               rel="noreferrer"
             >

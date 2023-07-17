@@ -1,13 +1,13 @@
 import Background from "./Background";
 import Container from "./Container";
 import dynamic from "next/dynamic";
-import focusAgency from "../public/assets/projects/focus-agency.png";
+import libertyEye from "../public/assets/projects/liberty-eye.png";
 import portfolio from "../public/assets/projects/portfolio.png";
-import gameQuiz from "../public/assets/projects/game-quiz.png";
+// import gameQuiz from "../public/assets/projects/game-quiz.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
 import eCommerce from "../public/assets/projects/e-commerce.png";
-import wordleGame from "../public/assets/projects/wordle-game.png";
+// import wordleGame from "../public/assets/projects/wordle-game.png";
 import testing from "../public/assets/projects/testing.png";
 const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
 import en from "../translations/fourth-section/en.json";
@@ -52,10 +52,10 @@ const FourthSection = () => {
             data-aos="fade"
           >
             <ProjectsBuilt
-              title="Focus Agency"
-              backgroundImage={focusAgency}
+              title="Liberty Eye"
+              backgroundImage={libertyEye}
               framework="NextJS"
-              projectUrl="/FocusAgency"
+              projectUrl="/LibertyEye"
             />
             <ProjectsBuilt
               title="This Portfolio"
@@ -69,12 +69,12 @@ const FourthSection = () => {
               framework="NextJS"
               projectUrl="/Ecommerce"
             />
-            <ProjectsBuilt
+            {/* <ProjectsBuilt
               title="Wordle Game"
               backgroundImage={wordleGame}
               framework="Vite"
               projectUrl="/WordleGame"
-            />
+            /> */}
             <ProjectsBuilt
               title="Netflix Clone"
               backgroundImage={netflixClone}
@@ -87,12 +87,12 @@ const FourthSection = () => {
               framework="NextJS"
               projectUrl="/WeatherApp"
             />
-            <ProjectsBuilt
+            {/* <ProjectsBuilt
               title="Game Quiz"
               backgroundImage={gameQuiz}
               framework="NextJS"
               projectUrl="/GameQuiz"
-            />
+            /> */}
           </div>
           <h4 className="py-4" data-aos="fade">
             Testing

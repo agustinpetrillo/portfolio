@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Background from "../components/Background";
 import Container from "../components/Container";
-import focusAgency from "../public/assets/projects/focus-agency.png";
+import libertyEye from "../public/assets/projects/liberty-eye.png";
 import Link from "next/link";
 import { RiRadioButtonFill } from "react-icons/ri";
 import en from "../translations/focus/en.json";
@@ -9,7 +9,7 @@ import es from "../translations/focus/es.json";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-const FocusAgency = () => {
+const LibertyEye = () => {
   const router = useRouter();
   const { locale } = router;
   const translate = locale === "en" ? en : es;
@@ -21,14 +21,14 @@ const FocusAgency = () => {
       <div className="w-full h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/75">
           <Image
-            src={focusAgency}
+            src={libertyEye}
             alt="/"
             layout="fill"
             objectFit="cover"
             className="absolute -z-10"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 px-6">
-            <h2 className="py-2">Focus Agency</h2>
+            <h2 className="py-2">Liberty Eye</h2>
             <h3>NextJS / TailwindCSS</h3>
           </div>
         </div>
@@ -68,6 +68,12 @@ const FocusAgency = () => {
               <p className="flex items-center py-2 tracking-tight text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> AOS
               </p>
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
+                <RiRadioButtonFill className="pr-1" /> Firebase
+              </p>
+              <p className="flex items-center py-2 tracking-tight text-gray-600">
+                <RiRadioButtonFill className="pr-1" /> GetForm
+              </p>
             </div>
           </div>
         </div>
@@ -83,4 +89,4 @@ const FocusAgency = () => {
   );
 };
 
-export default FocusAgency;
+export default LibertyEye;

@@ -1,3 +1,9 @@
+import libertyEye from "../public/assets/projects/liberty-eye.png";
+import portfolio from "../public/assets/projects/portfolio.png";
+import eCommerce from "../public/assets/projects/e-commerce.png";
+import netflixClone from "../public/assets/projects/netflix-clone.png";
+import weatherApp from "../public/assets/projects/weather-app.png";
+
 export const Skills = [
   {
     src: "/assets/skills/html.png",
@@ -58,5 +64,38 @@ export const Skills = [
   {
     src: "/assets/skills/python.png",
     skill: "PYTHON",
+  },
+];
+
+export const Projects = [
+  {
+    title: "Liberty Eye",
+    background: libertyEye,
+    framework: "NextJS",
+    url: "/LibertyEye",
+  },
+  {
+    title: "This portfolio",
+    background: portfolio,
+    framework: "NextJS",
+    url: "/Portfolio",
+  },
+  {
+    title: "E-commerce web",
+    background: eCommerce,
+    framework: "NextJS",
+    url: "/Ecommerce",
+  },
+  {
+    title: "Netflix Clone",
+    background: netflixClone,
+    framework: "NextJS",
+    url: "/NetflixClone",
+  },
+  {
+    title: "Weather App",
+    background: weatherApp,
+    framework: "NextJS",
+    url: "/WeatherApp",
   },
 ];

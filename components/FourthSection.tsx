@@ -1,21 +1,15 @@
-import Background from "./Background";
-import Container from "./Container";
-import dynamic from "next/dynamic";
-import libertyEye from "../public/assets/projects/liberty-eye.png";
-import portfolio from "../public/assets/projects/portfolio.png";
-// import gameQuiz from "../public/assets/projects/game-quiz.png";
-import weatherApp from "../public/assets/projects/weather-app.png";
-import netflixClone from "../public/assets/projects/netflix-clone.png";
-import eCommerce from "../public/assets/projects/e-commerce.png";
-// import wordleGame from "../public/assets/projects/wordle-game.png";
-import testing from "../public/assets/projects/testing.png";
-const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
-import en from "../translations/fourth-section/en.json";
-import es from "../translations/fourth-section/es.json";
 import { useRouter } from "next/router";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Projects } from "../utils/Data";
+import Background from "./Background";
+import Container from "./Container";
+import dynamic from "next/dynamic";
+import testing from "../public/assets/projects/testing.png";
+const ProjectsBuilt = dynamic(() => import("./ProjectsBuilt"));
+import en from "../translations/fourth-section/en.json";
+import es from "../translations/fourth-section/es.json";
 
 const FourthSection = () => {
   const router = useRouter();
@@ -51,48 +45,15 @@ const FourthSection = () => {
             className="grid gap-8 px-4 md:grid-cols-2 lg:px-0"
             data-aos="fade"
           >
-            <ProjectsBuilt
-              title="Liberty Eye"
-              backgroundImage={libertyEye}
-              framework="NextJS"
-              projectUrl="/LibertyEye"
-            />
-            <ProjectsBuilt
-              title="This Portfolio"
-              backgroundImage={portfolio}
-              framework="NextJS"
-              projectUrl="/Portfolio"
-            />
-            <ProjectsBuilt
-              title="E-commerce web"
-              backgroundImage={eCommerce}
-              framework="NextJS"
-              projectUrl="/Ecommerce"
-            />
-            {/* <ProjectsBuilt
-              title="Wordle Game"
-              backgroundImage={wordleGame}
-              framework="Vite"
-              projectUrl="/WordleGame"
-            /> */}
-            <ProjectsBuilt
-              title="Netflix Clone"
-              backgroundImage={netflixClone}
-              framework="NextJS"
-              projectUrl="/NetflixClone"
-            />
-            <ProjectsBuilt
-              title="Weather App"
-              backgroundImage={weatherApp}
-              framework="NextJS"
-              projectUrl="/WeatherApp"
-            />
-            {/* <ProjectsBuilt
-              title="Game Quiz"
-              backgroundImage={gameQuiz}
-              framework="NextJS"
-              projectUrl="/GameQuiz"
-            /> */}
+            {Projects.map((project, i) => (
+              <ProjectsBuilt
+                key={i}
+                title={project.title}
+                backgroundImage={project.background}
+                framework={project.framework}
+                projectUrl={project.url}
+              />
+            ))}
           </div>
           <h4 className="py-4" data-aos="fade">
             Testing

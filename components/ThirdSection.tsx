@@ -1,12 +1,13 @@
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import AOS from "aos";
 import Background from "./Background";
 import Container from "./Container";
 import ProjectSkills from "./ProjectSkills";
 import en from "../translations/third-section/en.json";
 import es from "../translations/third-section/es.json";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
+import { Skills } from "../utils/Data";
 
 const ThirdSection = () => {
   const router = useRouter();
@@ -39,66 +40,13 @@ const ThirdSection = () => {
             className="grid gap-8 px-12 md:grid-cols-2 lg:grid-cols-4 md:px-5 lg:px-0"
             data-aos="fade"
           >
-            <ProjectSkills
-              backgroundImage="/assets/skills/html.png"
-              title="HTML"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/css.png"
-              title="CSS"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/nextjs.png"
-              title="NEXTJS"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/git.png"
-              title="GIT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/react.png"
-              title="REACT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/javascript.png"
-              title="JAVASCRIPT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/typescript.png"
-              title="TYPESCRIPT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/gitlab.png"
-              title="GITLAB"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/tailwind.png"
-              title="TAILWIND"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/firebase.png"
-              title="FIREBASE"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/github1.png"
-              title="GITHUB"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/nuxt.png"
-              title="NUXT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/robot-framework.png"
-              title="ROBOT"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/selenium.png"
-              title="SELENIUM"
-            />
-            <ProjectSkills
-              backgroundImage="/assets/skills/python.png"
-              title="PYTHON"
-            />
+            {Skills.map((skill, i) => (
+              <ProjectSkills
+                key={i}
+                backgroundImage={skill.src}
+                title={skill.skill}
+              />
+            ))}
           </div>
         </Container>
       </Background>

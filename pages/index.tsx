@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/assets/logo-nav.png" />
       </Head>
 
-      <div>
+      <div className="dark:bg-gradient-to-br from-gray-800 to-black">
         <FirstSection />
         <SecondSection />
         <ThirdSection />

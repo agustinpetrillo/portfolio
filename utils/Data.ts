@@ -3,6 +3,7 @@ import portfolio from "../public/assets/projects/portfolio.png";
 import eCommerce from "../public/assets/projects/e-commerce.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
+import wordle from "../public/assets/projects/wordle-game.png";
 
 export const Skills = [
   {
@@ -79,6 +80,12 @@ export const Projects = [
     background: portfolio,
     framework: "NextJS",
     url: "/Portfolio",
+  },
+  {
+    title: "Wordle",
+    background: wordle,
+    framework: "ViteJS",
+    url: "/WordleGame",
   },
   {
     title: "E-commerce web",

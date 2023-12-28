@@ -4,6 +4,7 @@ import eCommerce from "../public/assets/projects/e-commerce.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
 import messenger from "../public/assets/projects/messenger.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
+import gameQuiz from "../public/assets/projects/game-quiz.png";
 import wordle from "../public/assets/projects/wordle-game.png";
 
 export const Skills = [
@@ -105,6 +106,12 @@ export const Projects = [
     background: netflixClone,
     framework: "NextJS",
     url: "/NetflixClone",
+  },
+  {
+    title: "Game Quiz",
+    background: gameQuiz,
+    framework: "NextJS",
+    url: "/GameQuiz",
   },
   {
     title: "Weather App",

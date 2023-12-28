@@ -75,11 +75,11 @@ const Navbar = () => {
                   {translate.first}
                 </li>
               </Link>
-              <Link href="/#about">
+              {/* <Link href="/#about">
                 <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.second}
                 </li>
-              </Link>
+              </Link> */}
               <Link href="/#skills">
                 <li className="ml-10 text-sm uppercase hover:text-[#5651e5] transition-all duration-100">
                   {translate.third}
@@ -175,11 +175,11 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div onClick={handleScrollY}>
-                  <Link href="/#about">
+                  {/* <Link href="/#about">
                     <li className="py-4 text-sm" onClick={handleNav}>
                       {translate.second}
                     </li>
-                  </Link>
+                  </Link> */}
                 </div>
                 <div onClick={handleScrollY}>
                   <Link href="/#skills">

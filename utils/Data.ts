@@ -2,6 +2,7 @@ import libertyEye from "../public/assets/projects/liberty-eye.png";
 import portfolio from "../public/assets/projects/portfolio.png";
 import eCommerce from "../public/assets/projects/e-commerce.png";
 import netflixClone from "../public/assets/projects/netflix-clone.png";
+import messenger from "../public/assets/projects/messenger.png";
 import weatherApp from "../public/assets/projects/weather-app.png";
 import wordle from "../public/assets/projects/wordle-game.png";
 
@@ -92,6 +93,12 @@ export const Projects = [
     background: eCommerce,
     framework: "NextJS",
     url: "/Ecommerce",
+  },
+  {
+    title: "Messenger",
+    background: messenger,
+    framework: "NextJS",
+    url: "/Messenger",
   },
   {
     title: "Netflix Clone",

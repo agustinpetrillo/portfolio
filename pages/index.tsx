@@ -28,8 +28,7 @@ const Home: NextPage = () => {
       </Head>
 
       {/* <div className="dark:bg-gradient-to-br from-gray-800 to-black"> */}
-      {/* <div className="dark:bg-dark-background"> */}
-      <div>
+      <div className="dark:bg-dark-background/50">
         <SpaceBackground />
         <FirstSection />
         {/* <SecondSection /> */}

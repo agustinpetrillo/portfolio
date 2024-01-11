@@ -32,8 +32,8 @@ const Home: NextPage = () => {
         <SpaceBackground />
         <FirstSection />
         {/* <SecondSection /> */}
-        <ThirdSection />
         <FourthSection />
+        <ThirdSection />
         <FifthSection />
       </div>
     </div>

@@ -107,12 +107,12 @@ export const Projects = [
     framework: "NextJS",
     url: "/NetflixClone",
   },
-  {
-    title: "This portfolio",
-    background: portfolio,
-    framework: "NextJS",
-    url: "/Portfolio",
-  },
+  // {
+  //   title: "This portfolio",
+  //   background: portfolio,
+  //   framework: "NextJS",
+  //   url: "/Portfolio",
+  // },
   // {
   //   title: "Weather App",
   //   background: weatherApp,

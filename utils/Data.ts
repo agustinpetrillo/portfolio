@@ -78,12 +78,6 @@ export const Projects = [
     url: "/LibertyEye",
   },
   {
-    title: "This portfolio",
-    background: portfolio,
-    framework: "NextJS",
-    url: "/Portfolio",
-  },
-  {
     title: "Wordle",
     background: wordle,
     framework: "ViteJS",
@@ -102,21 +96,27 @@ export const Projects = [
     url: "/Messenger",
   },
   {
-    title: "Netflix Clone",
-    background: netflixClone,
-    framework: "NextJS",
-    url: "/NetflixClone",
-  },
-  {
     title: "Game Quiz",
     background: gameQuiz,
     framework: "NextJS",
     url: "/GameQuiz",
   },
   {
-    title: "Weather App",
-    background: weatherApp,
+    title: "Netflix Clone",
+    background: netflixClone,
     framework: "NextJS",
-    url: "/WeatherApp",
+    url: "/NetflixClone",
   },
+  {
+    title: "This portfolio",
+    background: portfolio,
+    framework: "NextJS",
+    url: "/Portfolio",
+  },
+  // {
+  //   title: "Weather App",
+  //   background: weatherApp,
+  //   framework: "NextJS",
+  //   url: "/WeatherApp",
+  // },
 ];

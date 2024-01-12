@@ -89,12 +89,12 @@ export const Projects = [
     framework: "NextJS",
     url: "/Ecommerce",
   },
-  {
-    title: "Messenger",
-    background: messenger,
-    framework: "NextJS",
-    url: "/Messenger",
-  },
+  // {
+  //   title: "Messenger",
+  //   background: messenger,
+  //   framework: "NextJS",
+  //   url: "/Messenger",
+  // },
   {
     title: "Game Quiz",
     background: gameQuiz,
